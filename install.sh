@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt -y update
-apt -y --force-yes dist-upgrade
+apt -y upgrade
 
 apt -y install p7zip mc texlive-full texstudio keepassx chromium-browser openjdk-8-jdk whois samba vlc evince ocaml ghostscript gparted htop kolourpaint shotwell kontact unetbootin unrar
 
