@@ -11,3 +11,5 @@ apt install p7zip mc texlive-full texstudio keepassx chromium-browser openjdk-8-
 #apt -y --force-yes install onlyoffice-desktopeditors
 
 snap install shotcut --classic
+
+apt autoremove
