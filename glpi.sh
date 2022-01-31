@@ -7,11 +7,7 @@ apt update && apt upgrade
 apt install mc phpmyadmin
 apt install php php-curl php-zip php-gd php-intl php-pear php-imagick php-imap php-memcache php-pspell recode php-tidy php-xmlrpc php-xsl php-mbstring php-php-gettext php-ldap php-cas php-apcu libapache2-mod-php php-mysql php-bz2
 apt install mariadb-server
-#mysql -u root -p
-#CREATE DATABASE glpidb;
-#GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'password';
-#FLUSH PRIVILEGES;
-#EXIT;
+mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'password';FLUSH PRIVILEGES;EXIT;"
 wget https://github.com/glpi-project/glpi/releases/download/9.5.7/glpi-9.5.7.tgz
 tar -xvf glpi-9.5.7.tgz
 mv glpi /var/www/html/
