@@ -44,7 +44,7 @@ echo "<VirtualHost *:80>
 echo "---------------------------------------------------ln---------------------------------------------------"
 ln -s /etc/apache2/sites-available/glpi.conf /etc/apache2/sites-enabled/glpi.conf
 echo "------------------------------------------------a2enmod-------------------------------------------------"
-#a2enmod rewrite
+a2enmod rewrite
 echo "-----------------------------------------------systemctl------------------------------------------------"
 systemctl restart apache2
 
