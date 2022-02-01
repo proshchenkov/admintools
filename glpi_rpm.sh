@@ -24,20 +24,20 @@ mv glpi /var/www/html/
 echo "-------------------------------------------------chmod--------------------------------------------------"
 chmod 755 -R /var/www/html/
 echo "-------------------------------------------------chown--------------------------------------------------"
-chown www-data:www-data -R /var/www/html/
-echo "--------------------------------------------------echo--------------------------------------------------"
-echo "<VirtualHost *:80>
-     ServerAdmin proschenkov_vm@spb.ckb-rubin.local
-     DocumentRoot /var/www/html/glpi
-     ServerName glpi.ckb-rubin.local
-     <Directory /var/www/html/glpi>
-          Options FollowSymlinks
-          AllowOverride All
-          Require all granted
-     </Directory>
-     ErrorLog \${APACHE_LOG_DIR}/glpi.ckb-rubin.local_error.log
-     CustomLog \${APACHE_LOG_DIR}/glpi.ckb-rubin.local_access.log combined
-</VirtualHost>" > /etc/httpd/conf/glpi.conf
+chown apache:apache -R /var/www/html/
+# echo "--------------------------------------------------echo--------------------------------------------------"
+# echo "<VirtualHost *:80>
+#      ServerAdmin proschenkov_vm@spb.ckb-rubin.local
+#      DocumentRoot /var/www/html/glpi
+#      ServerName glpi.ckb-rubin.local
+#      <Directory /var/www/html/glpi>
+#           Options FollowSymlinks
+#           AllowOverride All
+#           Require all granted
+#      </Directory>
+#      ErrorLog \${APACHE_LOG_DIR}/glpi.ckb-rubin.local_error.log
+#      CustomLog \${APACHE_LOG_DIR}/glpi.ckb-rubin.local_access.log combined
+# </VirtualHost>" > /etc/httpd/conf/glpi.conf
 # echo "---------------------------------------------------ln---------------------------------------------------"
 # ln -s /etc/apache2/sites-available/glpi.conf /etc/apache2/sites-enabled/glpi.conf
 # echo "------------------------------------------------a2enmod-------------------------------------------------"
