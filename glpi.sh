@@ -2,6 +2,7 @@
 # GLPI
 # https://services.glpi-network.com/
 # https://www.osradar.com/how-to-install-glpi-on-debian-10-buster/
+# https://infoit.com.ua/linux/kak-ustanovit-glpi-v-ubuntu-20-04-lts/
 
 echo "---------------------------------------apt update && apt upgrade----------------------------------------"
 apt update && apt upgrade
