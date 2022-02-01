@@ -8,11 +8,11 @@
 echo "------------------------------------------yum install apache2-------------------------------------------"
 yum install httpd
 echo "--------------------------------------------yum install php---------------------------------------------"
-yum install php php-curl php-zip php-gd php-intl php-pear php-imagick php-imap php-memcache php-pspell recode php-tidy php-xmlrpc php-xsl php-mbstring php-ldap php-cas php-apcu libapache2-mod-php php-mysql php-bz2
+yum install php
 echo "---------------------------------------yum install mariadb-server---------------------------------------"
 yum install mariadb-server
-echo "-----------------------------------------yum install phpmyadmin-----------------------------------------"
-yum install phpmyadmin
+# echo "-----------------------------------------yum install phpmyadmin-----------------------------------------"
+# yum install phpmyadmin
 echo "--------------------------------------------mysql -u root -p--------------------------------------------"
 mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'glpipassword';FLUSH PRIVILEGES;"
 echo "--------------------------------------------------wget--------------------------------------------------"
@@ -43,7 +43,7 @@ ln -s /etc/apache2/sites-available/glpi.conf /etc/apache2/sites-enabled/glpi.con
 echo "------------------------------------------------a2enmod-------------------------------------------------"
 a2enmod rewrite
 echo "-----------------------------------------------systemctl------------------------------------------------"
-systemctl restart apache2
+systemctl restart httpd
 
 # По умолчанию логины / пароли:
 #    glpi/glpi для учетной записи администратора
