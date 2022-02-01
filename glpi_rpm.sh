@@ -6,7 +6,7 @@
 # echo "--------------------------------------------yum install mc----------------------------------------------"
 # yum install mc
 echo "------------------------------------------yum install apache2-------------------------------------------"
-yum install apache2
+yum install httpd
 echo "--------------------------------------------yum install php---------------------------------------------"
 yum install php php-curl php-zip php-gd php-intl php-pear php-imagick php-imap php-memcache php-pspell recode php-tidy php-xmlrpc php-xsl php-mbstring php-ldap php-cas php-apcu libapache2-mod-php php-mysql php-bz2
 echo "---------------------------------------yum install mariadb-server---------------------------------------"
