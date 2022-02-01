@@ -9,7 +9,7 @@ apt install mc
 echo "########################################################################################################"
 apt install apache2
 echo "########################################################################################################"
-apt install php php-curl php-zip php-gd php-intl php-pear php-imagick php-imap php-memcache php-pspell recode php-tidy php-xmlrpc php-xsl php-mbstring php-php-gettext php-ldap php-cas php-apcu libapache2-mod-php php-mysql php-bz2
+apt install php php-curl php-zip php-gd php7.4-intl php-pear php-imagick php-imap php-memcache php-pspell recode php-tidy php7.4-xmlrpc php-xsl php-mbstring php-php-gettext php7.4-ldap php-cas php-apcu libapache2-mod-php php-mysql php-bz2
 echo "########################################################################################################"
 apt install mariadb-server
 echo "########################################################################################################"
