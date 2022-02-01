@@ -15,7 +15,7 @@ apt install mariadb-server
 echo "########################################################################################################"
 apt install phpmyadmin
 echo "########################################################################################################"
-mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'password';FLUSH PRIVILEGES;EXIT;"
+mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'glpipassword';FLUSH PRIVILEGES;EXIT;"
 echo "########################################################################################################"
 wget https://github.com/glpi-project/glpi/releases/download/9.5.7/glpi-9.5.7.tgz
 echo "########################################################################################################"
@@ -30,7 +30,7 @@ echo "##########################################################################
 echo "<VirtualHost *:80>
      ServerAdmin admin@your_domain.com
      DocumentRoot /var/www/html/glpi
-     ServerName your-domain.com
+     ServerName glpi.ckb-rubin.local
      <Directory /var/www/html/glpi>
           Options FollowSymlinks
           AllowOverride All
