@@ -11,13 +11,12 @@ echo "------------------------------------------apt install apache2-------------
 apt install apache2
 echo "--------------------------------------------apt install php---------------------------------------------"
 apt install php7.4 php7.4-curl php7.4-zip php7.4-gd php7.4-intl php-pear php-imagick php7.4-imap php-memcache php7.4-pspell recode php7.4-tidy php7.4-xmlrpc php7.4-xsl php7.4-mbstring php7.4-ldap php-cas php-apcu libapache2-mod-php7.4 php7.4-mysql php7.4-bz2
-#php-php-gettext
 echo "---------------------------------------apt install mariadb-server---------------------------------------"
 apt install mariadb-server
 echo "-----------------------------------------apt install phpmyadmin-----------------------------------------"
 apt install phpmyadmin
 echo "--------------------------------------------mysql -u root -p--------------------------------------------"
-mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'glpipassword';FLUSH PRIVILEGES;EXIT;"
+mysql -u root -p -Bse "CREATE DATABASE glpidb;GRANT ALL PRIVILEGES ON glpidb.* TO 'glpiuser'@'localhost' IDENTIFIED BY 'glpipassword';FLUSH PRIVILEGES;"
 echo "--------------------------------------------------wget--------------------------------------------------"
 wget https://github.com/glpi-project/glpi/releases/download/9.5.7/glpi-9.5.7.tgz
 echo "--------------------------------------------------tar---------------------------------------------------"
