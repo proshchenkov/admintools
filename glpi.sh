@@ -28,7 +28,7 @@ echo "##########################################################################
 chown www-data:www-data -R /var/www/html/
 echo "########################################################################################################"
 echo "<VirtualHost *:80>
-     ServerAdmin admin@your_domain.com
+     ServerAdmin proschenkov_vm@spb.ckb-rubin.local
      DocumentRoot /var/www/html/glpi
      ServerName glpi.ckb-rubin.local
      <Directory /var/www/html/glpi>
